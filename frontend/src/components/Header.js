@@ -21,7 +21,7 @@ function Header() {
             <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
                 <Container>
                     <LinkContainer to='/'>
-                        <Navbar.Brand>Ezra's Shop</Navbar.Brand>
+                        <Navbar.Brand>Ezra's Shop Demo</Navbar.Brand>
                     </LinkContainer>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -39,12 +39,12 @@ function Header() {
                                         <NavDropdown.Item>Profile</NavDropdown.Item>
                                     </LinkContainer>
 
-                                    <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item>
+                                    <NavDropdown.Item onClick={logoutHandler}>登出</NavDropdown.Item>
 
                                 </NavDropdown>
                             ) : (
                                     <LinkContainer to='/login'>
-                                        <Nav.Link><i className="fas fa-user"></i>Login</Nav.Link>
+                                        <Nav.Link><i className="fas fa-user"></i>登入</Nav.Link>
                                     </LinkContainer>
                                 )}
 
